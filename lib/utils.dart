@@ -13,7 +13,6 @@ class Utils {
       var response =
       await http.post('https://${DotEnv().env['API_KEY']}:${DotEnv().env['KEY_SECRET']}@api.razorpay.com/v1/orders', headers: {
         "content-type": "application/json",
-        //"Proxy-Authorization": "rzp_test_es6GKSXTgeu80Q:VbB5xxa34ZVC2FB0yQaHcPoh"
       },
           body: json.encode({
             "amount": prod.prodCost,
